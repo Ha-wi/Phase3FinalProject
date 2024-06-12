@@ -1,35 +1,37 @@
 Chronicles of Aluposiak
 
-Welcome to Chronicles of Aluposiak, an interactive text-based RPG game where you embark on thrilling quests, battle fierce enemies, and grow your character.
-Features
+~Welcome to Chronicles of Aluposiak, an interactive text-based RPG game where you embark on thrilling quests, battle fierce enemies, and grow your character.
+
+*Features
 
 -Character Creation: Create a new character and choose from three different classes: Warrior, Mage, or Rogue.
 -Character Management: View all characters, choose an existing character to play, save progress, and delete characters.
 -Quest System: Engage in quests to gain experience and level up your character.
 -Combat System: Battle enemies with class-specific abilities.
-File Descriptions
 
-main.py
+*File Descriptions
 
-The entry point of the game. It initializes and starts the game.
+1main.py
 
-models/player.py
+-The entry point of the game. It initializes and starts the game.
 
-Defines the Player class, including attributes and methods for creating, saving, deleting, and managing player characters.
+2.models/player.py
 
-models/enemy.py
+-Defines the Player class, including attributes and methods for creating, saving, deleting, and managing player characters.
 
-Defines the Enemy class, including attributes and methods for creating, saving, deleting, and managing enemies.
+3.models/enemy.py
 
-database/setup.py
+-Defines the Enemy class, including attributes and methods for creating, saving, deleting, and managing enemies.
 
-Contains the create_tables function to initialize the database and create necessary tables.
+4.database/setup.py
 
-game/game_logic.py
+-Contains the create_tables function to initialize the database and create necessary tables.
 
-Contains the core game logic, including the main game loop, quest handling, and combat system.
+5.game/game_logic.py
 
-How to Play
+-Contains the core game logic, including the main game loop, quest handling, and combat system.
+
+*How to Play
 
 1.Main Menu:
 
@@ -44,10 +46,10 @@ How to Play
 Quest 1: The Goblin Menace: Accept the quest and battle goblins. Use your class-specific abilities to defeat enemies.
 Save and Exit: Save your progress and return to the main menu.
 
-Installation
+*Installation
 
 Clone the repository
-git clone https://github.com/yourusername/chronicles_of_aluposiak.git
+git clone https://github.com/Ha-wi/Phase3FinalProject.git
 
 Install required packages:
 pip install sqlite3
@@ -57,6 +59,6 @@ Usage
 Run the game:
 python main.py
 
-License
+*License
 This project is licensed under the MIT License.
 
