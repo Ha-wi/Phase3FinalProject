@@ -5,8 +5,11 @@ Chronicles of Aluposiak
 *Features
 
 -Character Creation: Create a new character and choose from three different classes: Warrior, Mage, or Rogue.
+
 -Character Management: View all characters, choose an existing character to play, save progress, and delete characters.
+
 -Quest System: Engage in quests to gain experience and level up your character.
+
 -Combat System: Battle enemies with class-specific abilities.
 
 *File Descriptions
