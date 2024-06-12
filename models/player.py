@@ -12,14 +12,14 @@ class Player:
 
     @staticmethod
     def create_table():
-        with sqlite3.connect('eldoria.db') as conn:
+        with sqlite3.connect('Aluposiak.db') as conn:
             c = conn.cursor()
             c.execute('''CREATE TABLE IF NOT EXISTS players
                          (id INTEGER PRIMARY KEY, name TEXT, character_class TEXT, health INTEGER, level INTEGER, experience INTEGER)''')
             conn.commit()
 
     def save(self):
-        with sqlite3.connect('eldoria.db') as conn:
+        with sqlite3.connect('Aluposiak.db') as conn:
             c = conn.cursor()
             if self.id is None:
                 c.execute("INSERT INTO players (name, character_class, health, level, experience) VALUES (?, ?, ?, ?, ?)",
@@ -32,14 +32,14 @@ class Player:
 
     @staticmethod
     def delete(player_id):
-        with sqlite3.connect('eldoria.db') as conn:
+        with sqlite3.connect('Aluposiak.db') as conn:
             c = conn.cursor()
             c.execute("DELETE FROM players WHERE id=?", (player_id,))
             conn.commit()
 
     @staticmethod
     def get_all():
-        with sqlite3.connect('eldoria.db') as conn:
+        with sqlite3.connect('Aluposiak.db') as conn:
             c = conn.cursor()
             c.execute("SELECT * FROM players")
             rows = c.fetchall()
@@ -47,7 +47,7 @@ class Player:
 
     @staticmethod
     def find_by_id(player_id):
-        with sqlite3.connect('eldoria.db') as conn:
+        with sqlite3.connect('Aluposiak.db') as conn:
             c = conn.cursor()
             c.execute("SELECT * FROM players WHERE id=?", (player_id,))
             row = c.fetchone()

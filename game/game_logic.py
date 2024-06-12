@@ -5,7 +5,7 @@ from database.setup import create_tables
 
 def start_game():
     create_tables()
-    print("Welcome to Aluposiak!\n")
+    print("Welcome to Chronicles Of Aluposiak!\n")
     
     while True:
         print("\nMain Menu:")
@@ -63,7 +63,7 @@ def start_game():
                 print("Character not found.")
                 
         elif main_choice == "5":
-            print("Thank you for playing Aluposiak!")
+            print("Thank you for playing Chronicles Of Aluposiak!")
             break
         else:
             print("Invalid choice. Please try again.")
@@ -138,7 +138,7 @@ def game_loop(player):
 
                 next_choice = input("Enter your choice: ")
                 if next_choice == "2":
-                    print("Thank you for playing Aluposiak!")
+                    print("Thank you for playing Chronicles Of Aluposiak!")
                     break
 
         elif choice == "2":
